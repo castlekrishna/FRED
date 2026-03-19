@@ -1,18 +1,18 @@
-import modules.web as web
-operation={
-    "youtube" : web.open_youtube,
-    "google" : web.open_google,
-    "drive" : web.open_drive,
-    "whatsapp" : web.open_whatsapp,
-    "chatgpt" : web.open_chatgpt,
-    "docs" : web.open_docs,
-    "sheet" : web.open_sheet,
-    "github" : web.open_github,
-    "telegram" : web.open_telegram
-}
+import modules.router as router
+
+
+
+
+# opening websites
 def browser(command):
-    for key,func in operation.items():
+    for key,func in router.browsing.items():
                 if key in command:
                         func()
                         return
     print("Command not found...")
+
+def handle_play(command):
+    for key , func in router.play_map.items():
+        if key in command:
+            func(command)
+

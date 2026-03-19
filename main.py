@@ -1,5 +1,6 @@
 import modules.operations as operations
 from modules.games.guess_number import start
+from modules.chat import reply
 def main():
     try:
         while True:
@@ -9,8 +10,11 @@ def main():
                 break
             if "open" in command:
                 operations.browser(command)
-            if "guess" in command:
-                 start()
+            if "play" in command:
+                 operations.handle_play(command)
+            responce = reply(command)
+            if responce:
+                 print(responce)
     except KeyboardInterrupt:
          print("\nByiee...")
 

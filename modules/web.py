@@ -26,3 +26,6 @@ def open_github():
 def open_telegram():
         print("Opening telegram...")
         webbrowser.open("https://web.telegram.org/a/")
+def play_music(command):
+        print("Playing music...")
+        webbrowser.open("https://music.youtube.com/")
