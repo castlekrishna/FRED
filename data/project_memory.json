@@ -5,13 +5,15 @@
             "features": {
                 "completed": [
                     "open apps",
-                    "basic command system"
+                    "basic command system",
+                    "memory management"
                 ],
-                "current": "memory management",
+                "current": "study environment",
                 "upcoming": [
-                    "voice commands",
-                    "google sheet sync",
-                    "task automation"
+                    "Study_environment",
+                    "version.json",
+                    "CHANGELOG.md",
+                    "voice commands"
                 ]
             },
             "last_updated": "2026-03-20"

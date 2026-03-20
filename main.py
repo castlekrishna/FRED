@@ -22,6 +22,8 @@ def main():
                 operations.show_projects(command)
             if "working" in command:
                  operations.add_feature(command)
+            if "study" in command:
+                 operations.study()
     except KeyboardInterrupt:
          print("\nByiee...")
 
