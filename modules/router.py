@@ -17,5 +17,6 @@ browsing={
 
 play_map = {
     "game" : games,
-    "music" : web.play_music
+    "music" : web.play_music,
+    "song" : web.play_music
 }

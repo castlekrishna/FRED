@@ -1,5 +1,6 @@
 
 from modules.games.guess_number import start as guess
+import modules.help as help
 games_func = {
         "guess" : guess
         
@@ -10,5 +11,4 @@ def games(command):
                 if key in command:
                         func()
                         return
-        print("Command not found")
-        print("""Use "play guess" """)
+        help.help_games()
