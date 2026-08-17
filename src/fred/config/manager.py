@@ -3,8 +3,9 @@ from pathlib import Path
 
 
 class ConfigManager:
-    def __init__(self, path):
-        self.path = Path(path)
+    def __init__(self, directory_manager):
+        self.directory_manager = directory_manager
+        self.path = self.directory_manager.get_directory("config") / "config.json"
         self.config = {}
 
     def load(self):
